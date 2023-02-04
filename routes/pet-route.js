@@ -12,7 +12,7 @@ router.get("/:id", petController.getPetById);
 
 router.post(
   "/lostPet",
-  fileUpload.single("file"),
+//   fileUpload.single("file"),
   [
     check("firstName").not().isEmpty(),
     check("lastName").not().isEmpty(),
